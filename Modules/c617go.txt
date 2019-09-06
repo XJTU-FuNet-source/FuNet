@@ -1,0 +1,80 @@
+Used file:  Entries: 27											
+Your provided set of 27 genes: 											
+FGSG_00006											
+FGSG_00036											
+FGSG_00046											
+FGSG_00047											
+FGSG_00048											
+FGSG_00049											
+FGSG_00065											
+FGSG_00076											
+FGSG_01770											
+FGSG_03516											
+FGSG_03536											
+FGSG_03538											
+FGSG_03542											
+FGSG_03548											
+FGSG_04511											
+FGSG_04678											
+FGSG_04708											
+FGSG_04866											
+FGSG_05610											
+FGSG_06447											
+FGSG_06449											
+FGSG_06450											
+FGSG_07641											
+FGSG_11260											
+FGSG_11551											
+FGSG_11655											
+FGSG_11656											
+											
+											
+The comparison is done to p3_p13839_Fus_grami_v32 containing 13826 annotated genes.											
+ 24 out of 27 genes are found:											
+ FGSG_00006 FGSG_00036 FGSG_00046 FGSG_00047 FGSG_00048 FGSG_00049 FGSG_00065 FGSG_00076 FGSG_01770 FGSG_03516 FGSG_03538 FGSG_03542 FGSG_03548 FGSG_04511 FGSG_04678 FGSG_04708 FGSG_04866 FGSG_05610 FGSG_06447 FGSG_06449 FGSG_06450 FGSG_07641 FGSG_11260 FGSG_11656											
+											
+k	Filter	FUNCTIONAL CATEGORY	abs SET	rel SET	genes SET	abs GENOME	rel GENOME	rel SET/rel GENOME	P-VALUE	Bonferroni_corr	FDR
+16.21 complex cofactor/cosubstrate/vitamine binding	6	25	FGSG_00049 FGSG_00065 FGSG_03548 FGSG_04708 FGSG_05610 FGSG_06447	514	3.71	6.738544474	0.000194759				
+01 METABOLISM	14	58.3	FGSG_00036 FGSG_11656 FGSG_00046 FGSG_00048 FGSG_00049 FGSG_04678 FGSG_03548 FGSG_03542 FGSG_04708 FGSG_05610 FGSG_06447 FGSG_06449 FGSG_06450 FGSG_11260	3402	24.6	2.369918699	0.000433678				
+20.01.15 electron transport	5	20.8	FGSG_00065 FGSG_03548 FGSG_03542 FGSG_05610 FGSG_06447	398	2.87	7.24738676	0.000521215				
+01.01.09.05.02 degradation of tyrosine	2	8.33	FGSG_06449 FGSG_06450	33	0.23	36.2173913	0.001475492				
+01.06.05 fatty acid metabolism	3	12.5	FGSG_00036 FGSG_11656 FGSG_11260	157	1.13	11.0619469	0.002440277				
+20.01 transported compounds (substrates)	8	33.3	FGSG_00046 FGSG_00065 FGSG_00076 FGSG_03548 FGSG_03542 FGSG_03516 FGSG_05610 FGSG_06447	1597	11.5	2.895652174	0.004171005				
+01.01 amino acid metabolism	5	20.8	FGSG_11656 FGSG_00049 FGSG_04708 FGSG_06449 FGSG_06450	649	4.69	4.434968017	0.004533441				
+01.20.17.07 metabolism of glycosinolates and derivatives	1	4.16	FGSG_06447	3	0.02	208	0.005198921				
+16.21.17 pyridoxal phosphate binding	2	8.33	FGSG_00049 FGSG_04708	63	0.45	18.51111111	0.005287192				
+01.01.09.04.02 degradation of phenylalanine	2	8.33	FGSG_06449 FGSG_06450	64	0.46	18.10869565	0.005451985				
+01.01.09.05 metabolism of tyrosine	2	8.33	FGSG_06449 FGSG_06450	64	0.46	18.10869565	0.005451985				
+"01.01.11 metabolism of the pyruvate family (alanine, isoleucine, leucine, valine) and D-alanine"	2	8.33	FGSG_00049 FGSG_04708	65	0.47	17.72340426	0.005619125				
+34.11.12 perception of nutrients and nutritional adaptation	2	8.33	FGSG_00076 FGSG_03516	88	0.63	13.22222222	0.010093396				
+01.01.09 metabolism of the cysteine - aromatic group	3	12.5	FGSG_04708 FGSG_06449 FGSG_06450	266	1.92	6.510416667	0.010570436				
+16.21.01 heme binding	2	8.33	FGSG_03548 FGSG_06447	91	0.65	12.81538462	0.010763314				
+01.01.09.04 metabolism of phenylalanine	2	8.33	FGSG_06449 FGSG_06450	94	0.67	12.43283582	0.011452491				
+01.01.06.05.02 degradation of methionine	1	4.16	FGSG_00049	7	0.05	83.2	0.012090535				
+01.01.11.01 metabolism of alanine	1	4.16	FGSG_04708	8	0.05	83.2	0.013806276				
+01.01.03.01.02 degradation of glutamine	1	4.16	FGSG_11656	9	0.06	69.33333333	0.015519162				
+32.07.01 detoxification involving cytochrome P450	2	8.33	FGSG_03548 FGSG_06447	111	0.8	10.4125	0.015711998				
+"20 CELLULAR TRANSPORT, TRANSPORT FACILITIES AND TRANSPORT ROUTES"	8	33.3	FGSG_00046 FGSG_00065 FGSG_00076 FGSG_03548 FGSG_03542 FGSG_03516 FGSG_05610 FGSG_06447	2007	14.5	2.296551724	0.016408528				
+01.01.11.02.02 degradation of isoleucine	1	4.16	FGSG_00049	10	0.07	59.42857143	0.017229196				
+20.01.07 amino acid/amino acid derivatives transport	2	8.33	FGSG_00076 FGSG_03516	120	0.86	9.686046512	0.018202589				
+01.01.11.03.02 degradation of valine	1	4.16	FGSG_00049	11	0.07	59.42857143	0.018936383				
+"01.01.03 assimilation of ammonia, metabolism of the glutamate group"	2	8.33	FGSG_11656 FGSG_06449	127	0.91	9.153846154	0.020248094				
+01.20 secondary metabolism	4	16.6	FGSG_00048 FGSG_03542 FGSG_06447 FGSG_11260	627	4.53	3.664459161	0.021605231				
+34.11 cellular sensing and response to external stimulus	3	12.5	FGSG_00046 FGSG_00076 FGSG_03516	350	2.53	4.940711462	0.021955529				
+01.01.11.03.01 biosynthesis of valine	1	4.16	FGSG_00049	13	0.09	46.22222222	0.022342235				
+01.01.03.05.02 degradation of arginine	1	4.16	FGSG_06449	14	0.1	41.6	0.02404091				
+41.01.03.01 fruit body development (sexually or asexually derived spores)	1	4.16	FGSG_03538	15	0.1	41.6	0.025736755				
+01.01.03.01 metabolism of glutamine	1	4.16	FGSG_11656	16	0.11	37.81818182	0.027429776				
+01.01.11.02.01 biosynthesis of isoleucine	1	4.16	FGSG_00049	17	0.12	34.66666667	0.029119978				
+41.01.03 tissue pattern formation	1	4.16	FGSG_03538	17	0.12	34.66666667	0.029119978				
+16 PROTEIN WITH BINDING FUNCTION OR COFACTOR REQUIREMENT (structural or catalytic)	10	41.6	FGSG_00046 FGSG_00049 FGSG_00065 FGSG_03548 FGSG_03538 FGSG_04708 FGSG_05610 FGSG_06447 FGSG_06449 FGSG_06450	3139	22.7	1.832599119	0.029640728				
+01.01.11.04.02 degradation of leucine	1	4.16	FGSG_00049	19	0.13	32	0.03249194				
+02.11 electron transport and membrane-associated energy conservation	2	8.33	FGSG_00065 FGSG_05610	166	1.2	6.941666667	0.033268747				
+01.01.03.02.02 degradation of glutamate	1	4.16	FGSG_11656	21	0.15	27.73333333	0.035852678				
+01.01.11.03 metabolism of valine	1	4.16	FGSG_00049	21	0.15	27.73333333	0.035852678				
+01.01.11.04.01 biosynthesis of leucine	1	4.16	FGSG_00049	21	0.15	27.73333333	0.035852678				
+43.01.03.06 hyphae formation	1	4.16	FGSG_00006	23	0.16	26	0.039202226				
+16.17 metal binding	4	16.6	FGSG_03548 FGSG_05610 FGSG_06449 FGSG_06450	758	5.48	3.02919708	0.039700392				
+01.01.11.02 metabolism of isoleucine	1	4.16	FGSG_00049	25	0.18	23.11111111	0.042540622				
+											
+" To correct for multiple comparisons in multiple hypothesis testing for the 845 taxonomical allowed FunCats, we calculated the Bonferroni correction as well as the False discovery rate (FDR) control with an experiment-wide significance level alpha of 0.05. The table is sorted by the p-value (k position). You will find as filter the holding criteria B=Bonferroni correction < 0.05, F:p-value < False discovery rate and  *:p-value < 0.05."											

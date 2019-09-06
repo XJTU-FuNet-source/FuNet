@@ -1,0 +1,97 @@
+Used file:  Entries: 58											
+Your provided set of 58 genes: 											
+FGSG_00260											
+FGSG_00750											
+FGSG_00773											
+FGSG_00793											
+FGSG_02051											
+FGSG_02221											
+FGSG_02320											
+FGSG_02589											
+FGSG_02691											
+FGSG_02852											
+FGSG_02949											
+FGSG_03026											
+FGSG_03046											
+FGSG_03264											
+FGSG_03288											
+FGSG_03368											
+FGSG_03432											
+FGSG_03828											
+FGSG_03881											
+FGSG_03882											
+FGSG_03969											
+FGSG_03984											
+FGSG_04512											
+FGSG_04527											
+FGSG_04596											
+FGSG_06060											
+FGSG_06062											
+FGSG_06068											
+FGSG_06356											
+FGSG_06564											
+FGSG_06651											
+FGSG_06701											
+FGSG_07052											
+FGSG_07067											
+FGSG_07116											
+FGSG_07152											
+FGSG_07411											
+FGSG_07822											
+FGSG_08415											
+FGSG_08624											
+FGSG_08697											
+FGSG_09040											
+FGSG_09061											
+FGSG_09101											
+FGSG_09820											
+FGSG_10442											
+FGSG_10443											
+FGSG_10444											
+FGSG_11025											
+FGSG_11205											
+FGSG_11249											
+FGSG_11310											
+FGSG_11474											
+FGSG_11992											
+FGSG_12376											
+FGSG_12387											
+FGSG_12970											
+FGSG_13979											
+											
+											
+The comparison is done to p3_p13839_Fus_grami_v32 containing 13826 annotated genes.											
+ 57 out of 58 genes are found:											
+ FGSG_00260 FGSG_00750 FGSG_00773 FGSG_00793 FGSG_02051 FGSG_02221 FGSG_02320 FGSG_02589 FGSG_02691 FGSG_02852 FGSG_02949 FGSG_03026 FGSG_03046 FGSG_03264 FGSG_03288 FGSG_03368 FGSG_03432 FGSG_03828 FGSG_03881 FGSG_03882 FGSG_03969 FGSG_03984 FGSG_04512 FGSG_04527 FGSG_04596 FGSG_06060 FGSG_06062 FGSG_06068 FGSG_06356 FGSG_06564 FGSG_06651 FGSG_06701 FGSG_07067 FGSG_07116 FGSG_07152 FGSG_07411 FGSG_07822 FGSG_08415 FGSG_08624 FGSG_08697 FGSG_09040 FGSG_09061 FGSG_09101 FGSG_09820 FGSG_10442 FGSG_10443 FGSG_10444 FGSG_11025 FGSG_11205 FGSG_11249 FGSG_11310 FGSG_11474 FGSG_11992 FGSG_12376 FGSG_12387 FGSG_12970 FGSG_13979											
+											
+k	Filter	FUNCTIONAL CATEGORY	abs SET	rel SET	genes SET	abs GENOME	rel GENOME	rel SET/rel GENOME	P-VALUE	Bonferroni_corr	FDR
+"34.01.01.01 homeostasis of metal ions (Na, K, Ca etc.)"	6	10.5	FGSG_00773 FGSG_02589 FGSG_04512 FGSG_03882 FGSG_06060 FGSG_12970	208	1.5	7	0.000206581				
+01.25.03 extracellular protein degradation	2	3.5	FGSG_03432 FGSG_11249	8	0.05	70	0.000460197				
+"16.17.09 heavy metal binding (Cu, Fe, Zn)"	8	14	FGSG_02051 FGSG_03881 FGSG_12970 FGSG_07067 FGSG_09040 FGSG_09820 FGSG_11025 FGSG_11249	499	3.6	3.888888889	0.000948602				
+34.01.01 homeostasis of cations	6	10.5	FGSG_00773 FGSG_02589 FGSG_04512 FGSG_03882 FGSG_06060 FGSG_12970	290	2.09	5.023923445	0.00119546				
+01.01.09.04.02 degradation of phenylalanine	3	5.26	FGSG_03264 FGSG_02852 FGSG_06068	64	0.46	11.43478261	0.002316269				
+02.16.03 lactate fermentation	2	3.5	FGSG_03984 FGSG_10444	18	0.13	26.92307692	0.002448929				
+34.01 homeostasis	6	10.5	FGSG_00773 FGSG_02589 FGSG_04512 FGSG_03882 FGSG_06060 FGSG_12970	336	2.43	4.320987654	0.002519024				
+16.17 metal binding	9	15.7	FGSG_02051 FGSG_04512 FGSG_03881 FGSG_12970 FGSG_07067 FGSG_09040 FGSG_09820 FGSG_11025 FGSG_11249	758	5.48	2.864963504	0.003594893				
+01.01.09 metabolism of the cysteine - aromatic group	5	8.77	FGSG_03264 FGSG_02852 FGSG_06068 FGSG_09040 FGSG_09820	266	1.92	4.567708333	0.004703337				
+"20.01.01.01 cation transport (H+, Na+, K+, Ca2+ , NH4+, etc.)"	5	8.77	FGSG_00773 FGSG_02589 FGSG_04512 FGSG_03882 FGSG_06060	269	1.94	4.520618557	0.004930533				
+01.01.09.04 metabolism of phenylalanine	3	5.26	FGSG_03264 FGSG_02852 FGSG_06068	94	0.67	7.850746269	0.006830696				
+42.29 bud / growth tip	2	3.5	FGSG_03881 FGSG_11025	31	0.22	15.90909091	0.007191768				
+"20.01.01.01.01 heavy metal ion transport (Cu+, Fe3+, etc.)"	3	5.26	FGSG_00773 FGSG_02589 FGSG_06060	99	0.71	7.408450704	0.007877976				
+01.05.11.07.01.03 meta-cleavage	1	1.75	FGSG_09061	2	0.01	175	0.008228635				
+20.01.01 ion transport	5	8.77	FGSG_00773 FGSG_02589 FGSG_04512 FGSG_03882 FGSG_06060	321	2.32	3.780172414	0.010214299				
+32.01.01 oxidative stress response	3	5.26	FGSG_02051 FGSG_03882 FGSG_02852	122	0.88	5.977272727	0.013875953				
+20.01.15 electron transport	5	8.77	FGSG_04512 FGSG_03984 FGSG_06068 FGSG_09040 FGSG_09820	398	2.87	3.055749129	0.023732041				
+16.17.03 potassium binding	1	1.75	FGSG_04512	6	0.04	43.75	0.024486838				
+01.01.09.04.01 biosynthesis of phenylalanine	2	3.5	FGSG_03264 FGSG_06068	61	0.44	7.954545455	0.026161232				
+32.07.07 oxygen and radical detoxification	2	3.5	FGSG_02051 FGSG_02852	68	0.49	7.142857143	0.031976434				
+01.20.21 metabolism of sulfuric acid and L-cysteine derivatives	1	1.75	FGSG_09820	8	0.05	35	0.032517458				
+14.13 protein/peptide degradation	5	8.77	FGSG_04527 FGSG_03881 FGSG_03432 FGSG_11025 FGSG_11249	443	3.2	2.740625	0.035388326				
+01.25 extracellular metabolism	2	3.5	FGSG_03432 FGSG_11249	74	0.53	6.603773585	0.037326421				
+32.01.04 pH stress response	1	1.75	FGSG_12970	10	0.07	25	0.040483119				
+16.17.05 sodium binding	1	1.75	FGSG_04512	11	0.07	25	0.044441752				
+16.03 nucleic acid binding	7	12.2	FGSG_03881 FGSG_12376 FGSG_06356 FGSG_12970 FGSG_07067 FGSG_07116 FGSG_11025	811	5.86	2.081911263	0.048069345				
+01.01.09.03.02 degradation of cysteine	1	1.75	FGSG_09820	12	0.08	21.875	0.048384337				
+34.11.13.07 circulation (e.g. blood pressure)	1	1.75	FGSG_04512	12	0.08	21.875	0.048384337				
+											
+" To correct for multiple comparisons in multiple hypothesis testing for the 845 taxonomical allowed FunCats, we calculated the Bonferroni correction as well as the False discovery rate (FDR) control with an experiment-wide significance level alpha of 0.05. The table is sorted by the p-value (k position). You will find as filter the holding criteria B=Bonferroni correction < 0.05, F:p-value < False discovery rate and  *:p-value < 0.05."											

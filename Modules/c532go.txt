@@ -1,0 +1,113 @@
+Used file:  Entries: 80											
+Your provided set of 80 genes: 											
+FGSG_00004											
+FGSG_00005											
+FGSG_00060											
+FGSG_00062											
+FGSG_00096											
+FGSG_00171											
+FGSG_00184											
+FGSG_00199											
+FGSG_00221											
+FGSG_01603											
+FGSG_01818											
+FGSG_02114											
+FGSG_02206											
+FGSG_02267											
+FGSG_02353											
+FGSG_02667											
+FGSG_02668											
+FGSG_02681											
+FGSG_02792											
+FGSG_03108											
+FGSG_03157											
+FGSG_03184											
+FGSG_03315											
+FGSG_03365											
+FGSG_03570											
+FGSG_03591											
+FGSG_03599											
+FGSG_03600											
+FGSG_03632											
+FGSG_03911											
+FGSG_03981											
+FGSG_04518											
+FGSG_04600											
+FGSG_04636											
+FGSG_04662											
+FGSG_04738											
+FGSG_04745											
+FGSG_04874											
+FGSG_04921											
+FGSG_05397											
+FGSG_05663											
+FGSG_06469											
+FGSG_07209											
+FGSG_07557											
+FGSG_07558											
+FGSG_07647											
+FGSG_07741											
+FGSG_07765											
+FGSG_07807											
+FGSG_07823											
+FGSG_08037											
+FGSG_08048											
+FGSG_08049											
+FGSG_08062											
+FGSG_08142											
+FGSG_08687											
+FGSG_09052											
+FGSG_09072											
+FGSG_10614											
+FGSG_10960											
+FGSG_11033											
+FGSG_11036											
+FGSG_11115											
+FGSG_11146											
+FGSG_11164											
+FGSG_11184											
+FGSG_11306											
+FGSG_11366											
+FGSG_11367											
+FGSG_11368											
+FGSG_11411											
+FGSG_11429											
+FGSG_11679											
+FGSG_12207											
+FGSG_12438											
+FGSG_12560											
+FGSG_12561											
+FGSG_12920											
+FGSG_13464											
+FGSG_13952											
+											
+											
+The comparison is done to p3_p13839_Fus_grami_v32 containing 13826 annotated genes.											
+ 70 out of 80 genes are found:											
+ FGSG_00004 FGSG_00005 FGSG_00060 FGSG_00062 FGSG_00096 FGSG_00171 FGSG_00184 FGSG_00199 FGSG_01603 FGSG_01818 FGSG_02114 FGSG_02206 FGSG_02267 FGSG_02353 FGSG_02667 FGSG_02668 FGSG_02681 FGSG_03108 FGSG_03157 FGSG_03184 FGSG_03315 FGSG_03365 FGSG_03570 FGSG_03591 FGSG_03599 FGSG_03600 FGSG_03632 FGSG_03911 FGSG_03981 FGSG_04518 FGSG_04600 FGSG_04636 FGSG_04662 FGSG_04738 FGSG_04745 FGSG_04874 FGSG_04921 FGSG_05397 FGSG_05663 FGSG_06469 FGSG_07209 FGSG_07557 FGSG_07558 FGSG_07741 FGSG_07765 FGSG_07807 FGSG_07823 FGSG_08037 FGSG_08048 FGSG_08049 FGSG_08062 FGSG_08142 FGSG_08687 FGSG_09052 FGSG_09072 FGSG_10614 FGSG_10960 FGSG_11033 FGSG_11036 FGSG_11146 FGSG_11164 FGSG_11184 FGSG_11366 FGSG_11367 FGSG_11368 FGSG_11411 FGSG_12207 FGSG_12920 FGSG_13464 FGSG_13952											
+											
+k	Filter	FUNCTIONAL CATEGORY	abs SET	rel SET	genes SET	abs GENOME	rel GENOME	rel SET/rel GENOME	P-VALUE	Bonferroni_corr	FDR
+01.20.05.09 metabolism of eicosanoids	4	5.71	FGSG_02267 FGSG_02668 FGSG_11146 FGSG_10960	17	0.12	47.58333333	1.36E-06				
+40.10.02.01 anti-apoptosis	4	5.71	FGSG_02668 FGSG_04738 FGSG_11146 FGSG_10960	31	0.22	25.95454545	1.71E-05				
+34.11.13.07 circulation (e.g. blood pressure)	3	4.28	FGSG_02668 FGSG_11146 FGSG_10960	12	0.08	53.5	2.65E-05				
+34.11.13 gas and metabolite distribution	3	4.28	FGSG_02668 FGSG_11146 FGSG_10960	13	0.09	47.55555556	3.43E-05				
+01.20.05 metabolism of acetic acid derivatives	4	5.71	FGSG_02267 FGSG_02668 FGSG_11146 FGSG_10960	56	0.4	14.275	0.000181441				
+32.07.07.05 peroxidase reaction	2	2.85	FGSG_02668 FGSG_10960	10	0.07	40.71428571	0.001107644				
+01.05.03 polysaccharide metabolism	6	8.57	FGSG_00096 FGSG_03632 FGSG_03591 FGSG_03570 FGSG_05663 FGSG_11184	291	2.1	4.080952381	0.003503106				
+40 CELL FATE 	8	11.4	FGSG_02667 FGSG_02668 FGSG_02681 FGSG_04738 FGSG_07557 FGSG_11164 FGSG_11146 FGSG_10960	548	3.96	2.878787879	0.006301084				
+40.10.02 apoptosis (type I programmed cell death)	4	5.71	FGSG_02668 FGSG_04738 FGSG_11146 FGSG_10960	150	1.08	5.287037037	0.007011417				
+40.10 cell death	4	5.71	FGSG_02668 FGSG_04738 FGSG_11146 FGSG_10960	163	1.17	4.88034188	0.009340321				
+14.13.04.02 vacuolar protein degradation	2	2.85	FGSG_03315 FGSG_11411	32	0.23	12.39130435	0.011363059				
+01.25.11 extracellular aminosaccharide degradation	1	1.42	FGSG_04738	3	0.02	71	0.015113093				
+01.01.05.01.01 biosynthesis of polyamines	1	1.42	FGSG_02206	5	0.03	47.33333333	0.025063176				
+"01.06 lipid, fatty acid and isoprenoid metabolism"	9	12.8	FGSG_01603 FGSG_02114 FGSG_02267 FGSG_02668 FGSG_04738 FGSG_07765 FGSG_11146 FGSG_11036 FGSG_10960	850	6.14	2.084690554	0.026990118				
+14.13.04 lysosomal and vacuolar protein degradation	2	2.85	FGSG_03315 FGSG_11411	51	0.36	7.916666667	0.027466626				
+34.11 cellular sensing and response to external stimulus	5	7.14	FGSG_02114 FGSG_02668 FGSG_11164 FGSG_11146 FGSG_10960	350	2.53	2.822134387	0.032050141				
+01.01.06.02.01 biosynthesis of asparagine	1	1.42	FGSG_03981	7	0.05	28.4	0.034914158				
+01.20 secondary metabolism	7	10	FGSG_01603 FGSG_02267 FGSG_02668 FGSG_07557 FGSG_07765 FGSG_11146 FGSG_10960	627	4.53	2.207505519	0.038816325				
+14.07.11 protein processing (proteolytic)	3	4.28	FGSG_01818 FGSG_11164 FGSG_11411	148	1.07	4	0.039100167				
+01.06.05 fatty acid metabolism	3	4.28	FGSG_02267 FGSG_02668 FGSG_10960	157	1.13	3.787610619	0.045269282				
+32.07.07 oxygen and radical detoxification	2	2.85	FGSG_02668 FGSG_10960	68	0.49	5.816326531	0.046462921				
+01.01.03.03.01 biosynthesis of proline	1	1.42	FGSG_02206	10	0.07	20.28571429	0.049506941				
+											
+" To correct for multiple comparisons in multiple hypothesis testing for the 845 taxonomical allowed FunCats, we calculated the Bonferroni correction as well as the False discovery rate (FDR) control with an experiment-wide significance level alpha of 0.05. The table is sorted by the p-value (k position). You will find as filter the holding criteria B=Bonferroni correction < 0.05, F:p-value < False discovery rate and  *:p-value < 0.05."											

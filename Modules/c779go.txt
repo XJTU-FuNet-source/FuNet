@@ -1,0 +1,83 @@
+Used file:  Entries: 44											
+Your provided set of 44 genes: 											
+FGSG_00007											
+FGSG_00028											
+FGSG_00071											
+FGSG_01765											
+FGSG_01819											
+FGSG_02416											
+FGSG_03532											
+FGSG_03534											
+FGSG_03535											
+FGSG_03537											
+FGSG_03539											
+FGSG_03540											
+FGSG_03541											
+FGSG_03543											
+FGSG_03585											
+FGSG_03700											
+FGSG_03708											
+FGSG_03818											
+FGSG_04656											
+FGSG_04693											
+FGSG_04741											
+FGSG_05046											
+FGSG_06466											
+FGSG_06609											
+FGSG_07562											
+FGSG_07896											
+FGSG_07988											
+FGSG_08023											
+FGSG_08077											
+FGSG_08078											
+FGSG_08079											
+FGSG_08080											
+FGSG_08081											
+FGSG_08082											
+FGSG_08083											
+FGSG_08084											
+FGSG_09066											
+FGSG_09742											
+FGSG_10397											
+FGSG_10587											
+FGSG_10675											
+FGSG_10974											
+FGSG_11046											
+FGSG_11542											
+											
+											
+The comparison is done to p3_p13839_Fus_grami_v32 containing 13826 annotated genes.											
+ 43 out of 44 genes are found:											
+ FGSG_00028 FGSG_00071 FGSG_01765 FGSG_01819 FGSG_02416 FGSG_03532 FGSG_03534 FGSG_03535 FGSG_03537 FGSG_03539 FGSG_03540 FGSG_03541 FGSG_03543 FGSG_03585 FGSG_03700 FGSG_03708 FGSG_03818 FGSG_04656 FGSG_04693 FGSG_04741 FGSG_05046 FGSG_06466 FGSG_06609 FGSG_07562 FGSG_07896 FGSG_07988 FGSG_08023 FGSG_08077 FGSG_08078 FGSG_08079 FGSG_08080 FGSG_08081 FGSG_08082 FGSG_08083 FGSG_08084 FGSG_09066 FGSG_09742 FGSG_10397 FGSG_10587 FGSG_10675 FGSG_10974 FGSG_11046 FGSG_11542											
+											
+k	Filter	FUNCTIONAL CATEGORY	abs SET	rel SET	genes SET	abs GENOME	rel GENOME	rel SET/rel GENOME	P-VALUE	Bonferroni_corr	FDR
+01.20 secondary metabolism	11	25.5	FGSG_00071 FGSG_01819 FGSG_03700 FGSG_03540 FGSG_03535 FGSG_07562 FGSG_07896 FGSG_08083 FGSG_08081 FGSG_08023 FGSG_10587	627	4.53	5.629139073	2.33E-06				
+32.07.01 detoxification involving cytochrome P450	5	11.6	FGSG_00071 FGSG_03540 FGSG_03535 FGSG_08079 FGSG_08023	111	0.8	14.5	2.30E-05				
+32.07 detoxification	9	20.9	FGSG_00071 FGSG_01765 FGSG_03700 FGSG_03541 FGSG_03540 FGSG_03535 FGSG_07896 FGSG_08079 FGSG_08023	520	3.76	5.558510638	2.53E-05				
+20.01.15 electron transport	8	18.6	FGSG_00071 FGSG_03700 FGSG_03540 FGSG_03535 FGSG_08079 FGSG_08077 FGSG_08023 FGSG_10587	398	2.87	6.480836237	2.63E-05				
+01.06.06.05 sesquiterpenes metabolism	3	6.97	FGSG_03540 FGSG_03535 FGSG_08023	20	0.14	49.78571429	3.08E-05				
+01.06.06 isoprenoid metabolism	5	11.6	FGSG_00071 FGSG_03818 FGSG_03540 FGSG_03535 FGSG_08023	184	1.33	8.721804511	0.000252551				
+"01.02 nitrogen, sulfur and selenium metabolism"	6	13.9	FGSG_03540 FGSG_08079 FGSG_08078 FGSG_08077 FGSG_08023 FGSG_10587	336	2.43	5.720164609	0.000562333				
+01.01.09.04.01 biosynthesis of phenylalanine	3	6.97	FGSG_03540 FGSG_08079 FGSG_08023	61	0.44	15.84090909	0.000889406				
+01.01.09.04.02 degradation of phenylalanine	3	6.97	FGSG_03540 FGSG_08079 FGSG_08023	64	0.46	15.15217391	0.001022971				
+16.21.01 heme binding	3	6.97	FGSG_00071 FGSG_03535 FGSG_10587	91	0.65	10.72307692	0.002813978				
+01.01.09.04 metabolism of phenylalanine	3	6.97	FGSG_03540 FGSG_08079 FGSG_08023	94	0.67	10.40298507	0.003084877				
+"32 CELL RESCUE, DEFENSE AND VIRULENCE"	11	25.5	FGSG_00071 FGSG_01765 FGSG_11542 FGSG_03700 FGSG_03541 FGSG_03540 FGSG_03535 FGSG_04693 FGSG_07896 FGSG_08079 FGSG_08023	1452	10.5	2.428571429	0.003983957				
+"32.05 disease, virulence and defense"	6	13.9	FGSG_00071 FGSG_11542 FGSG_03541 FGSG_03535 FGSG_04693 FGSG_07896	507	3.66	3.797814208	0.004543344				
+01.01.09 metabolism of the cysteine - aromatic group	4	9.3	FGSG_03540 FGSG_08083 FGSG_08079 FGSG_08023	266	1.92	4.84375	0.009175989				
+01.20.17.07 metabolism of glycosinolates and derivatives	1	2.32	FGSG_03700	3	0.02	116	0.00930193				
+01 METABOLISM	18	41.8	FGSG_00071 FGSG_01765 FGSG_01819 FGSG_11542 FGSG_03818 FGSG_03700 FGSG_03540 FGSG_03535 FGSG_07562 FGSG_07896 FGSG_08083 FGSG_08081 FGSG_08079 FGSG_08078 FGSG_08077 FGSG_08023 FGSG_10587 FGSG_10675	3402	24.6	1.699186992	0.009514749				
+01.02.02 nitrogen metabolism	2	4.65	FGSG_08077 FGSG_10587	63	0.45	10.33333333	0.016365713				
+20.01 transported compounds (substrates)	10	23.2	FGSG_00071 FGSG_03700 FGSG_03541 FGSG_03540 FGSG_03535 FGSG_08084 FGSG_08079 FGSG_08077 FGSG_08023 FGSG_10587	1597	11.5	2.017391304	0.022210192				
+32.10 degradation / modification of foreign (exogenous) compounds	2	4.65	FGSG_01765 FGSG_03535	77	0.55	8.454545455	0.02385804				
+01.20.21 metabolism of sulfuric acid and L-cysteine derivatives	1	2.32	FGSG_08083	8	0.05	46.4	0.024617669				
+32.05.03 defense related proteins	2	4.65	FGSG_00071 FGSG_11542	92	0.66	7.045454545	0.033149559				
+"01.20.29 metabolism of secondary products derived from L-glutamic acid, L-proline and L-ornithine"	1	2.32	FGSG_08083	11	0.07	33.14285714	0.033695845				
+01.20.17 metabolism of secondary products derived from primary amino acids	2	4.65	FGSG_03700 FGSG_10587	96	0.69	6.739130435	0.035831772				
+01.01.09.03.02 degradation of cysteine	1	2.32	FGSG_08083	12	0.08	29	0.036703523				
+01.06.06.07 diterpenes metabolism	1	2.32	FGSG_00071	12	0.08	29	0.036703523				
+01.20.33 metabolism of secondary products derived from L-tryptophan	1	2.32	FGSG_08083	15	0.1	23.2	0.0456718				
+41.01.03.01 fruit body development (sexually or asexually derived spores)	1	2.32	FGSG_03700	15	0.1	23.2	0.0456718				
+"01.06 lipid, fatty acid and isoprenoid metabolism"	6	13.9	FGSG_00071 FGSG_03818 FGSG_03540 FGSG_03535 FGSG_08078 FGSG_08023	850	6.14	2.263843648	0.046348078				
+											
+" To correct for multiple comparisons in multiple hypothesis testing for the 845 taxonomical allowed FunCats, we calculated the Bonferroni correction as well as the False discovery rate (FDR) control with an experiment-wide significance level alpha of 0.05. The table is sorted by the p-value (k position). You will find as filter the holding criteria B=Bonferroni correction < 0.05, F:p-value < False discovery rate and  *:p-value < 0.05."											
