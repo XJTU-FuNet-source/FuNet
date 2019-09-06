@@ -20,24 +20,22 @@
 
 <body>
     <div id="header">
-        <h1>输入基因进行模块分析 <a href="find moudle.rar" class="STYLE3">在线网页功能无法使用时可下载exe 使用</a></h1>
+        <h1> <a href="find moudle.rar" class="STYLE3">you can download exe when you can't use this web</a></h1>
         <p class="STYLE2">Input gene list search module(00256 00256 03688 09851...)</p>
     </div>
 
     <!-- 在文本框内输入一个数字，点击输入完毕按钮，将在本地生成一个input.txt，内容为输入的数字 -->
 <div id="input">
 				<div>
-					请选择数据文件input your genes list：
-				</div>
+					input your genes list：				</div>
 				<input type="file" name="file" id="dataFilePicker"/>
 				<div>
-						请选择数据库l文件input database:
-	  </div>
+						input database:	  </div>
             <input type="file" name="file" id="filePicker"/>
         <!-- <input name="button2" type="button"  onclick="show()" value = "显示文件"/> -->
         <a href="sample/FGSG gene database.xlsx">you can use this database        </a>
         <div id = "div1"> </div>
-        <input type="button" value="输入完毕" onClick="finishInput()" />
+        <input type="button" value="run" onClick="finishInput()" />
   You can use the regulators in the retrieved module to do the research you need. <a href="module-regulators.xlsx">module-regulators</a></div>
     <p></p>
     <!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
@@ -64,7 +62,7 @@
 		<p>&nbsp;</p>
     </div>
     <div id="result">
-        <p>使用说明：浏览导入文件genelist 和database，然后依次点击 [输入完毕] </p>
+        <p>use：input genelist and database, then click run </p>
         <p>&nbsp;</p>
         <p><a href="Modularized Transcriptional Regulatory Networks of Pathogenic Fungus Fusarium graminearum Provide Novel Insights into Fungal Systems Biology.html" class="STYLE1">back</a></p>
     </div>
