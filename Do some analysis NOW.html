@@ -15,13 +15,19 @@
 .STYLE2 {font-size: 24px}
 .STYLE3 {font-size: 14px}
 
+    .STYLE4 {
+	font-size: large;
+	color: #FF0000;
+}
+    .STYLE6 {color: #00FF00}
+    .STYLE7 {color: #0000FF}
     </style>
 </head>
 
 <body>
     <div id="header">
-        <h1> <a href="find moudle.rar" class="STYLE3">you can download exe when you can't use this web</a></h1>
-        <p class="STYLE2">Input gene list search module(00256 00256 03688 09851...)</p>
+        <h1> <a href="find moudle.rar" class="STYLE3">you can download python program when you can't use this web</a></h1>
+        <p class="STYLE2">Input gene list search module</p>
     </div>
 
     <!-- 在文本框内输入一个数字，点击输入完毕按钮，将在本地生成一个input.txt，内容为输入的数字 -->
@@ -33,10 +39,10 @@
 						input database:	  </div>
             <input type="file" name="file" id="filePicker"/>
         <!-- <input name="button2" type="button"  onclick="show()" value = "显示文件"/> -->
-        <a href="sample/FGSG gene database.xlsx">you can use this database        </a>
+        <a href="sample/FGSG gene database.xlsx">FGSG database        </a>(When you want to study the FGSG module, you can download this database directly.)
         <div id = "div1"> </div>
         <input type="button" value="run" onClick="finishInput()" />
-  You can use the regulators in the retrieved module to do the research you need. <a href="module-regulators.xlsx">module-regulators</a></div>
+  When you want to study the main regulators of the module, you can directly follow what we provide <a href="module-regulators.xlsx">module-regulators</a> . </div>
     <p></p>
     <!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
     <!-- <div id="program">
@@ -44,7 +50,7 @@
     </div> -->
     <div id="search-result">
             
-        </div>
+</div>
     <!-- 点击结果, 将在框内显示出计算的结果-->
     <div id="result">	
         <p>&nbsp;</p>
@@ -62,10 +68,12 @@
 		<p>&nbsp;</p>
     </div>
     <div id="result">
-        <p>use：input genelist and database, then click run </p>
+        <p class="STYLE4">Instructions for use: </p>
+        <p><span class="STYLE7">Offline use: </span>1. Click to download the Python program we provided, you will get the genelist (input.txt) containing the python executable program, FGSG database, test data; 2. Double-click findmodule.py to execute input.txt and get output.txt. 3. By looking at output.txt, you can see which module each gene belongs to, and in the last line, you can see the most enriched module of the gene. So you can go to the targeted research module and the main regulators in the module.</p>
+        <p><span class="STYLE6">Online use:</span> 1. Select your genelist as input, by importing it; 2. Select your database as the search database. When you study FGSG, you can directly download the FGSG database we provide as input. 3. After the input is completed, click run to execute, and the database and search results will be displayed below. You can see the modules to which each gene belongs and display the most enriched module in the last row. You will be able to conduct targeted research, the main regulators within modules and modules.</p>
         <p>&nbsp;</p>
         <p><a href="FuNet.html" class="STYLE1">back</a></p>
-    </div>
+</div>
     <script type="text/javascript" src="./jquery.min.js"></script>
 	<script type="text/javascript" src="./xlsx.core.min.js"></script>
 	<script type="text/javascript">
