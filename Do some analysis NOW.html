@@ -38,11 +38,11 @@
 				<div>
 						input database:	  </div>
             <input type="file" name="file" id="filePicker"/>
-        <!-- <input name="button2" type="button"  onclick="show()" value = "显示文件"/> -->
+        <!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> -->
         <a href="sample/FGSG gene database.xlsx">FGSG database        </a>(When you want to study the FGSG module, you can download this database directly.)
         <div id = "div1"> </div>
         <input type="button" value="run" onClick="finishInput()" />
-  When you want to study the main regulators of the module, you can directly follow what we provide <a href="module-regulators.xlsx">module-regulators</a> . </div>
+  After you get the result, if you want to study the main regulators of the module, you can directly follow what we provide <a href="module-regulators.xlsx">module-regulators</a> . </div>
     <p></p>
     <!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
     <!-- <div id="program">
@@ -291,7 +291,7 @@
 		if(files.length == 0) return;
 		var f = files[0];
 		if(!/\.xlsx$/g.test(f.name)) {
-			alert('仅支持读取xlsx格式！');
+			alert('Only read xlsx format is supported!');
 			return;
 		}
 		readWorkbookFromLocalFile(f, function(workbook) {
