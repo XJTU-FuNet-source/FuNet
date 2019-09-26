@@ -21,13 +21,54 @@
 }
     .STYLE6 {color: #00FF00}
     .STYLE7 {color: #0000FF}
+    #Layer1 {
+	position:absolute;
+	width:100%;
+	height:18px;
+	z-index:1;
+	top: 73px;
+	background-color: #66CC00;
+}
+    #Layer2 {
+	position:absolute;
+	width:100%;
+	height:14px;
+	z-index:2;
+	background-color: #66CC00;
+	top: 256px;
+	left: 0px;
+}
+    #Layer3 {
+	position:absolute;
+	width:364px;
+	height:115px;
+	z-index:3;
+	left: 606px;
+	top: 15px;
+}
+    .STYLE8 {
+	font-size: 36px;
+	font-weight: bold;
+}
+    #Layer4 {
+	position:absolute;
+	width:100%;
+	height:15px;
+	z-index:4;
+	background-color: #33FFFF;
+	left: 0px;
+	top: 2px;
+}
     </style>
 </head>
 
 <body>
+    <div id="Layer1"></div>
     <div id="header">
-        <h1> <a href="find moudle.rar" class="STYLE3">you can download python program when you can't use this web</a></h1>
-        <p class="STYLE2">Input gene list search module</p>
+        <h1> <a href="find moudle.rar" class="STYLE3">you can download python program when you can't use this web</a> </h1>
+        <div class="STYLE8" id="Layer3">module search tool </div>
+        <div id="Layer4"></div>
+        <p align="left" class="STYLE2">Input gene list search module</p>
     </div>
 
     <!-- 在文本框内输入一个数字，点击输入完毕按钮，将在本地生成一个input.txt，内容为输入的数字 -->
@@ -40,7 +81,9 @@
             <input type="file" name="file" id="filePicker"/>
         <!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> -->
         <a href="sample/FGSG gene database.xlsx">FGSG database        </a>(When you want to study the FGSG module, you can download this database directly.)
-        <div id = "div1"> </div>
+        <div id = "div1">
+          <div id="Layer2"></div>
+        </div>
         <input type="button" value="run" onClick="finishInput()" />
   After you get the result, if you want to study the main regulators of the module, you can directly follow what we provide <a href="module-regulators.xlsx">module-regulators</a> . </div>
     <p></p>
