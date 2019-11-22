@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D-GENIES - Dotplot large Genomes in an Interactive, Efficient and Simple way</title>
+    
+        <script src="/static/js/jquery-3.2.1.min.js" type="text/JavaScript"></script>
+        <script src="/static/js/popper.min.js" type="text/JavaScript"></script>
+        <script src="/static/js/bootstrap.min.js" type="text/JavaScript"></script>
+        <script src="/static/js/bootstrap-notify.min.js" type="text/JavaScript"></script>
+        <script src="/static/js/jquery-ui.min.js" type="text/JavaScript"></script>
+        <script src="/static/js/jquery.cookie-1.4.1.min.js" type="text/JavaScript"></script>
+        
+            <script src="/static/js/dgenies.min.js" type="text/JavaScript"></script>
+        
+    
+    <link rel="stylesheet" href="/static/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" type="text/css">
+    
+        <link rel="stylesheet" href="/static/css/dgenies.min.css" type="text/css">
+    
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body role="document" onload="dgenies.init([], 'webserver');">
+
+    <div id="main-wrapper">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">D-GENIES</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">About</a></li>
+                        <li class=""><a href="/run">Run</a></li>
+                        <li class="dropdown result ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Results<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                            </ul>
+                        </li>
+                        
+                            <li class=""><a href="/gallery">Gallery</a></li>
+                        
+                        <li class="dropdown documentation ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/documentation/run">Launch a job</a></li>
+                                <li><a href="/documentation/result">Results</a></li>
+                                <li><a href="/documentation/dotplot">Dot plot</a></li>
+                                <li><a href="/documentation/formats">File formats</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="/install">Install</a></li>
+                        <li class=""><a href="/contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div id="main-error">
+
+        </div>
+
+        <div class="container theme-showcase" id="body-container" role="main">
+
+            
+    <!-- Jumbotron -->
+      <div class="jumbotron" style="margin-top:10px; padding-top: 20px;text-align:justify; padding-bottom: 105px; position: relative;">
+        <h1>D-Genies</h1>
+          <p class="description lead">D-GENIES &#150; for <strong>D</strong>ot plot large <strong>Gen</strong>omes in an <strong>I</strong>nteractive, <strong>E</strong>fficient and <strong>S</strong>imple way &#150; is an online tool
+        designed to compare two genomes. It supports large genome and you can interact with the dot plot to improve the visualisation.</p>
+        <p class="description">We use minimap version 2 to align the two genomes. Then, the PAF file is parsed and plotted into
+        an interactive plot written with d3.js library.</p>
+          <p class="description">D-Genies also allows to display dot plots from other aligners by uploading their
+              <a href="/documentation/formats">PAF</a> or <a href="/documentation/formats#maf-multiple-alignment-file">MAF</a> alignment
+        file.</p>
+        <div style="position:absolute;width:90%;padding:10px 5px 0 5px;background-color:white;border:1px solid lightgrey;border-radius:5px; margin-top: 15px;">
+			<span class="label label-primary" style="position:absolute;top:-10px;left:-10px">How to cite</span>
+            <span style="font-weight: bold; font-size: 0.9em;">Cabanettes F, Klopp C. (2018) D-GENIES: dot plot large genomes in an interactive, efficient and simple way. PeerJ 6:e4958 <a href="https://doi.org/10.7717/peerj.4958">https://doi.org/10.7717/peerj.4958</a></span>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6" style="text-align:justify">
+        	<h1 class="page-header">D-Genies <small>Summary</small></h1>
+			<p>Dot plots are widely used to quickly compare sequence sets. They provide a synthetic similarity overview, highlighting repetitions, breaks and inversions. Different tools have been developed to easily generated genomic alignment dot plots, but they are often limited in the input sequence size. D-GENIES is a standalone and WEB application performing large genome alignments using minimap2 software package and generating interactive dot plots. It enables users to sort query sequences along the reference , zoom in the plot and download several image, alignment or sequence files. D-GENIES is an easy to install open source software package (GPL) developed in Python and JavaScript.</p>
+
+        
+
+			<h1 class="page-header">D-Genies <small>Availability</small></h1>
+			<p>D-Genies is available under the GNU General
+				Public License (GPL). The package is coming with full documentation and test data. Sources are available <a target="_blank" href="#">here</a>.</p>
+        </div><!--/span-->
+
+        <div class="col-lg-6" style="text-align:justify">
+            
+                <img src="/gallery/map_Pan_troglodytes.Pan_tro_3.0.dna.toplevel_to_Homo_sapiens.GRCh38.dna.primary_assembly.png" alt="example" width="500" height="500" />
+            
+        </div>
+
+      </div><!--/row-->
+
+
+            <footer>
+                <hr>
+                <div class="container" style="text-align: center;">
+                    <p>Copyright © 2017, INRA | Designed by <a target="_blank" href="http://bioinfo.genotoul.fr/">GenoToul
+                        Bioinfo platform</a>.</p>
+                </div>
+            </footer>
+
+        </div> <!-- /container -->
+    </div>
+
+
+<script type="text/javascript">
+            var supportsTemplateLiterals = false;
+            try {
+                eval("`foo`");
+                supportsTemplateLiterals = true;
+            }
+            catch (e) {
+            }
+            if (!supportsTemplateLiterals) {
+                $("#main-error").html("<span class='big'>Your browser is not supported!</span><br/>Please use a compatible browser like <a href=\"https://www.mozilla.org/firefox\">Firefox</a> or <a href=\"https://www.google.com/chrome/\">Google Chrome / Chromium</a>").show();
+            }
+        </script>
+</body>
+</html>
