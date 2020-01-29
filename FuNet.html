@@ -132,8 +132,6 @@
 	margin-left:3%;
 	margin-top:1%;
 }
-.STYLE1 {font-size: 36px}
-.STYLE3 {width: 8%; height: 40px; float: left; background-color: #96b96d; margin-left: 0%; text-align: center; line-height: 20px; font-size: 9px; }
 body {
 	margin-top: 30px;
 }
@@ -149,16 +147,6 @@ a:hover {
 }
 a:active {
 	text-decoration: none;
-}
-.STYLE12 {font-size: 18px}
-.STYLE13 {color: #FFFFFF; font-size: 18px; line-height: 20px; width: 8%; }
-.STYLE14 {width: 8%; height: 40px; float: left; background-color: #96b96d; margin-left: 0%; text-align: center; line-height: 20px; font-size: 14px; }
-.STYLE16 {width: 8%; height: 40px; float: left; background-color: #006600; margin-left: 0%; text-align: center; line-height: 40px; font-size: 24px; }
-.STYLE19 {font-size: 10px}
-.STYLE21 {font-size: 10px; color: #CC0000; }
-.STYLE22 {
-	font-size: 14px;
-	color: #FF9900;
 }
 #Layer1 {
 	position:absolute;
@@ -213,7 +201,7 @@ a:active {
 .nav{
 	height: 100px;
 	width: 100%;
-	background: #f8f8f8;
+	background: #00FF00;
 	text-align: right;
 	border-bottom: 1px solid #cfd5bd;
 }
@@ -243,7 +231,7 @@ a:active {
 }
 .email{
 	text-align: right;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 }
 .email_btn{
 	background: #d9d8d8;
@@ -254,8 +242,27 @@ a:active {
 	margin-right: 50px;
 	
 }
+.email button{
+	margin-right: 20px;
+}
 .text_cen{
 	text-align: center;
+}
+.footer{
+	width: 50%;
+	margin: auto;
+}
+.keyword{
+	width: 80%;
+	margin: auto;
+}
+.footer_box{
+	background: #333333;
+	color: #FFFFFF;
+	padding: 30px 0;
+}
+.footer a{
+	color: #FFFFFF;
 }
 html,body{
 	margin: 0;
@@ -263,40 +270,67 @@ html,body{
 }
 #Layer8 {
 	position:absolute;
-	width:436px;
-	height:115px;
+	width:538px;
+	height:64px;
 	z-index:1;
-	left: 9px;
-	top: -16px;
+	left: 4px;
+	top: 12px;
 }
+#Layer9 {
+	position:absolute;
+	width:351px;
+	height:125px;
+	z-index:1;
+	left: 0px;
+	top: -15px;
+}
+.STYLE23 {font-size: 24px}
+.STYLE25 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.STYLE26 {font-size: larger}
+.STYLE28 {
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.STYLE29 {font-size: 18px}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
  
 <body>
 	<div class="nav">
-		<div id="Layer8"><img src="logo.png" width="580" height="137"></div>
-		<span><a href="../MOTIVATION.html" >MOTIVATION</a></span>
-		<span><a href="../Do some analysis NOW.html">Module search tool</a></span>
-		<span><a href="../1.Summary of module preliminary analysis.html">Summary</a></span>
-		<span><a href="../2.Phenotypic function annotation of module networks.html">Phenotype </a></span>
-		<span><a href="../3.Module phenotypic association analysis and module groups partition.html">Module group</a></span>
-		<span><a href="../4.Motif enrichment and TF prediction analysis.html">Motif</a></span>
-		<span><a href="../5.Core vs. FS enrichment and species evolution.html">Species evolution</a></span>	</div>
+		<div id="Layer9"><img src="logo.png" width="580" height="113"></div>
+		<span><a href="MOTIVATION.html" >MOTIVATION</a></span>
+		<span><a href="Do some analysis NOW.html">Module search tool</a></span>
+		<span><a href="1.Summary of module preliminary analysis.html">Summary</a></span>
+		<span><a href="2.Phenotypic function annotation of module networks.html">Phenotype </a></span>
+		<span><a href="3.Module phenotypic association analysis and module groups partition.html">Module group</a></span>
+		<span><a href="4.Motif enrichment and TF prediction analysis.html">Motif</a></span>
+		<span><a href="5.Core vs. FS enrichment and species evolution.html">Species evolution</a></span>	</div>
   <!--<marquee behavior="scroll" direction="right" width="1500" height="50" loop="-1" scrollamount="1" scrolldelay="1" style="font:5px;" onMouseOver="this.stop();" onMouseOut="this.start();">
 <span class="STYLE1"> welcome to FuNet</span>
 </marquee>-->
 <div class="text">
-	<span class="hel">
-		Hello and welcome to <span style="font-weight: bold;">FuNet</span><br />
-		<a href="../Fg_poster.pptx"><strong>Modularized Transcriptional Regulatory Networks of Fusarium graminearum </strong></a>
-	</span>
+  <span class="hel">
+		<span class="STYLE26">Hello and welcome to <span style="font-weight: bold;">FuNet</span></span><br />
+    </span><a href="Fg_poster.pptx" class="STYLE25">Modularized Transcriptional Regulatory Networks of Fusarium graminearum </a></div>
+<div class="row keyword">
+        <section>
+          <div class="span12 divider-strip">
+            <h4 class="STYLE23">Key words </h4>
+            <p align="justify" ><span class="STYLE29"><em>Fusarium graminearum</em>, TRN, dynamic network, systems biology,&#160;transcription factor, head blight </span></p>
+          </div>
+          <div class="testimonialswrap">
+  
+          </div>
+        </section>
+        <div class="divider"></div>
 </div>
 <div class="email">
-	<span class="email_name">
-		<a href="mailto:guo_li@mail.xjtu.edu.cn" class="STYLE10">Mail:LiGuo</a>
-		<a href="mailto:jimengjie@stu.xjtu.edu.cn" class="STYLE10">Mail:Meng-Jie Ji</a>
-	</span>
+	<span class="STYLE28"><a href="mailto:jimengjie@stu.xjtu.edu.cn" class="STYLE10">Guo Li, Mengjie Ji, Ye Kai</a>	</span>
 	
 	<br />
 	<button class="email_btn">AUTHOR</button>
@@ -304,23 +338,48 @@ html,body{
 <p>&nbsp;</p>
 
 <p class="text_cen"><a href="mailto:guo_li@mail.xjtu.edu.cn"> </a>
-	<img src="../pictures/Display items01.png" width="395" height="339"> 
-		<img src="../pictures/Display items02.png" width="402" height="339"> 
-			<img src="../pictures/Display items03.png" width="384" height="280"> 
+	<img src="pictures/Display items01.png" width="395" height="339"> 
+		<img src="pictures/Display items02.png" width="402" height="339"> 
+			<img src="pictures/Display items03.png" width="384" height="280"> 
 </p>
 <p>&nbsp;</p>
 <p class="text_cen">
-	<img src="../pictures/Display items04.png" width="433" height="301">
-	<img src="../pictures/Display items05.png" width="596" height="331">
+	<img src="pictures/Display items04.png" width="433" height="301">
+	<img src="pictures/Display items05.png" width="596" height="331">
 
 </p>
 
 <p>&nbsp;</p>
 <p class="text_cen">
-	<img src="../pictures/Display items06.png" width="549" height="292">
-	<img src="../pictures/Display items07.png" width="497" height="304">
+	<img src="pictures/Display items06.png" width="549" height="292">
+	<img src="pictures/Display items07.png" width="497" height="304">
 </p>
 <p>&nbsp;</p>
+
+<div class="footer_box">
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h3 align="left">About</h3>
+        <p align="left">Li Guo1, 2, #, &#167;, Mengjie Ji1, #, Kai Ye1, &#167; </p>
+        <p align="left" ><em>1 </em><em>MOE Key Lab for Intelligent Networks & Network Security, Faculty of Electronics and Information Engineering, Xi&#8217;an Jiaotong University, Xi&#8217;</em><em>an, Shaanxi, China</em> <br>
+            <em>2 </em><em>School of Life Sciences and Technologies, Xi&#8217;an Jiaotong University, Xi&#8217;</em><em>an, Shaanxi, China</em></p>
+        <p align="left" >&#167; Corresponding author: <br>
+          Li Guo <br>
+          <a href="mailto:guo_li@xjtu.edu.cn" ><u>guo_li@xjtu.edu.cn</u></a> <br>
+          Kai Ye <br>
+          kaiye@xjtu.edu.cn <br>
+        # Equal contribution </p>
+        <h3 align="left">Connect With Us</h3>
+        <!-- social begin here -->
+      </div>
+      <!-- tweets begin here -->
+    </div>
+  </div>
+</footer>
+</div>
 </body>
 
  
