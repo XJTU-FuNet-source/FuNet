@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>phenotype</title>
+<style type="text/css">
+<!--
+.STYLE2 {
+	font-size: 24pt;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	left:2px;
+	top:149px;
+	width:1706px;
+	height:1069px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:101px;
+	top:364px;
+	width:1702px;
+	height:1192px;
+	z-index:1;
+}
+.STYLE4 {
+	font-size: 9pt;
+	font-weight: bold;
+}
+#Layer3 {
+	position:absolute;
+	left:-2px;
+	top:1753px;
+	width:1690px;
+	height:800px;
+	z-index:2;
+}
+#Layer4 {
+	position:absolute;
+	left:8px;
+	top:1574px;
+	width:652px;
+	height:144px;
+	z-index:3;
+}
+#Layer5 {
+	position:absolute;
+	width:100%;
+	height:30px;
+	z-index:4;
+	background-color: #66FF99;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_changeProp(objName,x,theProp,theValue) { //v6.0
+  var obj = MM_findObj(objName);
+  if (obj && (theProp.indexOf("style.")==-1 || obj.style)){
+    if (theValue == true || theValue == false)
+      eval("obj."+theProp+"="+theValue);
+    else eval("obj."+theProp+"='"+theValue+"'");
+  }
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="Layer2">
+  <p><img src="module-phe.png" name="IM1" width="1650" height="870" id="IM1" onclick="MM_changeProp('IM1','','width','3000','IMG');MM_changeProp('IM1','','height','1350','IMG')" ondblclick="MM_changeProp('IM1','','width','1100','IMG');MM_changeProp('IM1','','height','580','IMG')" /></p>
+  <p>&nbsp;</p>
+</div>
+<div id="Layer3">
+  <p><img src="Fig 5_A.png" width="1160" height="500" /><img src="Fig 5_B.png" width="524" height="471" /></p>
+  <p><a href="FuNet.html">back</a></p>
+  <p align="right"><a href="3.Module phenotypic association analysis and module groups partition.html">next</a></p>
+  <div id="Layer5"></div>
+  <p align="right">&nbsp; </p>
+</div>
+<div id="Layer4">
+  <p >In our case, we made statistics of module's regulators, but different modules contain different regulators, and different regulators have their corresponding effects on phenotypes. We need to use mathematical statistics to reasonably guess the phenotypes that each module affects, thus establishing the relationship with strong support between the module and the phenotypes.</p>
+</div>
+<div align="center">
+  <p class="STYLE2">Phenotypic function annotation of module networks  <span class="STYLE4">Click on the mouse to zoom in</span></p>
+  <p align="right">Eight phenotypes M:Mycelial growth; P:Pigmentation; <br />
+    S:Sexual development; Z:ZEA production; <br />
+    D: DON production;C:Conidiation; <br />
+    V:Virulence; St:Stress responses;<br />
+  </p>
+</div>
+<p>&nbsp;</p>
+<p>1.The regulators and corresponding phenotypes is the initial data and the data are arranged into the text of nodes and edges, nodes include 8 phenotype and 117 regulators(count all modules containing the regulation tree, a total of 48 modules and a total of 117 different regulators),and edges represent the connections between the two nodes, meaning that the regulator affects the kind of phenotype that are connected. Then input into Cytoscape to draw the network. After the corresponding connection diagram is obtained, the Regulator-Phenotype network diagram is obtained after using the software plug-in for proper clustering(ClusterViz in Cytosacape) and proper adjustment. In the network, the red line represents the positive effect of the regulator on the corresponding phenotype, while the green represents the negative effect. </p>
+<p>2.In order to establish the relationship between modules and phenotypes, we adopt a certain mathematical statistical model to describe the phenotypic functions of each module. The specific results and models are shown in the figure.<br />
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
