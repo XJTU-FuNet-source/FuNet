@@ -2,402 +2,495 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <script type="text/javascript" src="./jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./jquery.min.js"></script>
 	<script type="text/javascript" src="./xlsx.core.min.js"></script>
-    
-    <style type="text/css">
 
-.STYLE1 {
-	font-size: 24px;
-	font-weight: bold;
-}
-.STYLE2 {font-size: 24px}
-.STYLE3 {font-size: 14px}
+	<style type="text/css">
+	.sub-header.result-now-header{
+		background-color: #66FF99;
+	}
+	.sub-header{
+		padding-right: 100px;
+		font-size: 25px;;
+		background: #9898d4;
+	}
+	.download{
+		font-size: 25px;
+	}
+		.greenline{
+				margin-top:20px;
+				width: 100%;
+				height: 18px;
+				z-index: 1;
+				background-color: #66FF99;
+		}
+		.STYLE1 {
+			font-size: 24px;
+			font-weight: bold;
+		}
 
-    .STYLE4 {
-	font-size: large;
-	color: #FF0000;
-}
-    .STYLE6 {color: #00FF00}
-    .STYLE7 {color: #0000FF}
-    #Layer1 {
+		.STYLE2 {
+			font-size: 24px
+		}
+
+		.STYLE3 {
+			font-size: 14px
+		}
+
+		.STYLE4 {
+			font-size: large;
+			color: #FF0000;
+		}
+
+		.STYLE6 {
+			color: #00FF00
+		}
+
+		.STYLE7 {
+			color: #0000FF
+		}
+
+		#Layer1 {
+			position: absolute;
+			width: 100%;
+			height: 18px;
+			z-index: 1;
+			top: 73px;
+			background-color: #66FF99;
+		}
+
+		#Layer2 {
+			position: absolute;
+			width: 100%;
+			height: 14px;
+			z-index: 2;
+			background-color: #66FF99;
+			top: 256px;
+			left: 0px;
+		}
+
+		#Layer3 {
+
+			/* border-top: 10px solid #66FF99; */
+			height: 52px;
+			z-index: 3;
+			text-align: center;;
+		}
+
+		.STYLE8 {
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		#Layer4 {
+			position: absolute;
+			width: 100%;
+			height: 15px;
+			z-index: 4;
+			background-color: #33FFFF;
+			left: 0px;
+			top: 2px;
+		}
+
+		#Layer5 {
+			position: absolute;
+			width: 100%;
+			height: 54px;
+			z-index: 5;
+			background-color: #66FF99;
+		}
+
+		#Layer6 {
+			position: absolute;
+			width: 505px;
+			height: 115px;
+			z-index: 6;
+			left: 969px;
+			top: 61px;
+		}
+    #Layer7 {
 	position:absolute;
 	width:100%;
-	height:18px;
-	z-index:1;
-	top: 73px;
-	background-color: #66FF99;
-}
-    #Layer2 {
-	position:absolute;
-	width:100%;
-	height:14px;
-	z-index:2;
-	background-color: #66FF99;
-	top: 256px;
-	left: 0px;
-}
-    #Layer3 {
-	position:absolute;
-	width:364px;
-	height:52px;
-	z-index:3;
-	left: 606px;
-	top: 15px;
-}
-    .STYLE8 {
-	font-size: 36px;
-	font-weight: bold;
-}
-    #Layer4 {
-	position:absolute;
-	width:100%;
-	height:15px;
-	z-index:4;
-	background-color: #33FFFF;
-	left: 0px;
-	top: 2px;
-}
-    #Layer5 {
-	position:absolute;
-	width:100%;
-	height:54px;
-	z-index:5;
-	background-color: #66FF99;
-}
-    #Layer6 {
-	position:absolute;
-	width:505px;
-	height:115px;
-	z-index:6;
-	left: 969px;
-	top: 18px;
+	height:24px;
+	z-index:7;
+	background-color: #00FF66;
 }
     </style>
 </head>
 
 <body>
-    <div id="Layer1"></div>
-    <div id="header">
-        <h1> <a href="find moudle.rar" class="STYLE3">you can download python program when you can't use this web </a> </h1>
-        <div id="Layer6">
-          <p class="STYLE2">Li Guo, Mengjie Ji, Kai Ye <span class="STYLE3">2020</span> </p>
-          <p> <a href="https://www.biorxiv.org/content/10.1101/858498v2">Article: Network influence from multi omic data uncovers dynamic transcription regulation modules in procedural functions Fusarium grainarum (birxiv link)</a></p>
-        </div>
-        <div class="STYLE8" id="Layer3">module search tool </div>
-        <div id="Layer4"></div>
-        <p align="left" class="STYLE2">Input gene list search module </p>
-    </div>
+	<div id="header">
+		<div class="STYLE8" id="Layer3">Fusarium graminearum Module Network Database (FusNet)		</div>
+		<h1> <a href="find moudle.rar" class="STYLE3"></a> </h1>
+		<div id="Layer6">
+			<p class="STYLE2">Li Guo, Mengjie Ji, Kai Ye <span class="STYLE3">2019</span> </p>
+			<p> <a href="https://www.biorxiv.org/content/10.1101/858498v2"></a>			</p>
+		</div>
+		
+		<div id="Layer4"></div>
+		<p align="left" class="STYLE2">Input gene list search module </p>
+	</div>
+	<div >
+		<span class="sub-header">Option 1：On-line analysis </span>		
+	</div>
+	<!-- 在文本框内输入一个数字，点击输入完毕按钮，将在本地生成一个input.txt，内容为输入的数字 -->
+	<div id="input">
+		<div>
+			<strong>Step1</strong>: input your genes list：		</div>
+<div>
+			<input type="radio"  checked="checked" name="geneType" value='file' id="">
+			<span class="STYLE1"> file</span> (import a file)
+			<input type="radio" name="geneType" value='text' id="">
+	        <span class="STYLE2"><strong>text</strong></span>  ( type in the input box)</div>
+		<div>
+			<input type="file" name="file" id="dataFilePicker" />
+			<span>
+				Example <a href="sample/input list1.txt">input1</a>; <a href="sample/input list2.txt">input2</a> (You can understand
+				the input format.)
+			</span>
+		</div>
+		<div style="margin-top:20px;">
+			<textarea name="" id="step1-text" cols="200" rows="10"></textarea>
+		</div>
 
-    <!-- 在文本框内输入一个数字，点击输入完毕按钮，将在本地生成一个input.txt，内容为输入的数字 -->
-<div id="input">
-				<div>
-					input your genes list：				</div>
-  
-				<input type="file" name="file" id="dataFilePicker"/>
-                Example <a href="sample/input list1.txt">input1</a>; <a href="sample/input list2.txt">input2</a> (You can understand the input format.)
 
-                <div>
-						input database:	  </div>
-            <input type="file" name="file" id="filePicker"/>
-        <!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> -->
-        <a href="sample/FGSG gene database.xlsx">FGSG database        </a>(When you want to study the FGSG module, you can download this database directly.)
-        <div id = "div1">
-          <div id="Layer2"></div>
-        </div>
-        <input type="button" value="run" onClick="finishInput()" />
-  After you get the result, if you want to study the main regulators of the module, you can directly follow what we provide <a href="module-regulators.xlsx">module-regulators</a> . </div>
-    <p></p>
-    <!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
-    <!-- <div id="program">
+		<div>
+			<br>
+			<strong>Step2</strong>: input database: <span style="margin-left: 94px;">[Step2.1 download database Step2</span>.2 upload database]<br>
+		<input type="file" name="file" id="filePicker" />
+		<!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> -->
+		<a href="sample/FGSG gene database.xlsx">FGSG database </a>(When you want to study the FGSG module, you can download
+		this database directly.)
+		<br>
+		<br>
+		<div>
+			<div>
+				Step3: <input style="display: inline-block; width:150px; font-size: 40px;" type="button" value="run" onClick="finishInput()" />
+				After you get the result, if you want to study the main regulators of the module, you can directly follow what we
+				provide <a href="module-regulators.xlsx">module-regulators</a> .
+			</div>
+			<div class="greenline">
+			</div>
+
+		</div>
+	</div>
+	<p></p>
+	<!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
+	<!-- <div id="program">
         <input type="button" value="运行程序" onClick="exec1('python E:/Dreamweaver/workspace/findmodule.py')">
-    </div> -->
-    <div id="search-result">
+		</div> -->
+	<div > <span class="sub-header result-now-header">Result show </span> </div>
+	<!-- 点击结果, 将在框内显示出计算的结果-->
+	<div id="search-result">
             
-</div>
-    <!-- 点击结果, 将在框内显示出计算的结果-->
-    <div id="result">	
-        <p>&nbsp;</p>
-        
-        <div id="result" contenteditable></div>
-        
+	</div>
+<div id="result">
+
+		<div id="result" contenteditable></div>
+
 		<p>
-		  <iframe name="result" width="1000" height="300" scrolling="no" frameborder="3"></iframe>
+			<iframe name="result" width="1000" height="300" scrolling="no" frameborder="3"></iframe>
 		</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-    </div>
-    <div id="result">
-        <p class="STYLE4">Instructions for use: </p>
-        <p><span class="STYLE7">Offline use: </span>1. Click to download the Python program we provided, you will get the genelist (input.txt) containing the python executable program, FGSG database, test data; 2. Double-click findmodule.py to execute input.txt and get output.txt. 3. By looking at output.txt, you can see which module each gene belongs to, and in the last line, you can see the most enriched module of the gene. So you can go to the targeted research module and the main regulators in the module.</p>
-        <p><span class="STYLE6">Online use:</span> 1. Select your genelist as input, by importing it; 2. Select your database as the search database. When you study FGSG, you can directly download the FGSG database we provide as input. 3. After the input is completed, click run to execute, and the database and search results will be displayed below. You can see the modules to which each gene belongs and display the most enriched module in the last row. You will be able to conduct targeted research, the main regulators within modules and modules.</p>
-        <p>&nbsp;</p>
-        <p><a href="FuNet.html" class="STYLE1">back</a>(<strong>After the article is published, clicking back will return to FuNet's main interface. For copyright protection, you will be able to browse the full FuNet web page after our article is published, including the results and data of various parts to provide rich information. At present, only this department &quot;module search tool&quot; can be seen. </strong>)</p>
 </div>
-    <script type="text/javascript" src="./jquery.min.js"></script>
+	<div >
+		<span class="sub-header">Option 2: Download FusNet and run locally</span>		
+	</div>
+	<div>
+		<p>&nbsp;</p>
+		<p><a class="download" href="find moudle.rar">Download FusNet</a>(	<a href="find moudle.rar" class="STYLE3">you can download python program when you can't use this web</a>)</p>
+	</div>
+		
+		<div>
+			<p>&nbsp;</p>
+			<p><span class="STYLE2"><strong>Please cite FusNet as</strong>:
+			  Guo, L., M. Ji, and K. Ye. (2019) Network inference from multi-omic data uncovers dynamic transcriptional regulation modules in pathogenic fungus <em>Fusarium graminearum</em>. <a href="https://doi.org/10.1101/858498">bioRxiv. https://doi.org/10.1101/858498</a></span> </p>
+			<div id="Layer7"></div>
+			<p>&nbsp;</p>
+		</div>
+
+	<div id="result">
+		<p class="STYLE4">Instructions for use: </p>
+		<p><span class="STYLE7">Offline use: </span>1. Click to download the Python program we provided, you will get the
+			genelist (input.txt) containing the python executable program, FGSG database, test data; 2. Double-click
+			findmodule.py to execute input.txt and get output.txt. 3. By looking at output.txt, you can see which module each
+			gene belongs to, and in the last line, you can see the most enriched module of the gene. So you can go to the
+			targeted research module and the main regulators in the module.</p>
+		<p><span class="STYLE6">Online use:</span> 1. Select your genelist as input, you can import a file or type in the input box; 2. Select your
+			database as the search database. When you study FGSG, you can directly download the FGSG database we provide as
+			input. 3. After the input is completed, click run to execute, and the database and search results will be
+			displayed below. You can see the modules to which each gene belongs and display the most enriched module in the
+			last row. You will be able to conduct targeted research, the main regulators within modules and modules.</p>
+		<p>&nbsp;</p>
+		<p><a href="FuNet.html" class="STYLE1">back</a>(<strong>After the article is published, clicking back will return to
+				FuNet's main interface. For copyright protection, you will be able to browse the full FuNet web page after our
+				article is published, including the results and data of various parts to provide rich information. At present,
+				only this department &quot;module search tool&quot; can be seen. </strong>)</p>
+	</div>
+
+	<script type="text/javascript" src="./jquery.min.js"></script>
 	<script type="text/javascript" src="./xlsx.core.min.js"></script>
 	<script type="text/javascript">
-	function finishInput(){
-		f = document.getElementById('filePicker').files[0]
-		if(f!=null){
-				readWorkbookFromLocalFile(f, function(workbook) {
+		var dataInput = ''
+		function finishInput() {
+			f = document.getElementById('filePicker').files[0]
+			step1Type = $('input[name="geneType"]:checked').val()
+			if (step1Type == 'file' && f != null ) {
+				readWorkbookFromLocalFile(f, function (workbook) {
+					readWorkbook(workbook);
+				});
+			} else {
+				dataInput = $('#step1-text').val().split(' ')
+				dataInput = [...new Set(dataInput)]
+				readWorkbookFromLocalFile(f, function (workbook) {
+					readWorkbook(workbook);
+				});
+			}
+		}
+		function selectFile() {
+			document.getElementById('file').click();
+		}
+
+		// 读取本地excel文件
+		function readWorkbookFromLocalFile(file, callback) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				var data = e.target.result;
+				var workbook = XLSX.read(data, { type: 'binary' });
+				if (callback) callback(workbook);
+			};
+			reader.readAsBinaryString(file);
+		}
+
+		// 从网络上读取某个excel文件，url必须同域，否则报错
+		function readWorkbookFromRemoteFile(url, callback) {
+			var xhr = new XMLHttpRequest();
+			xhr.open('get', url, true);
+			xhr.responseType = 'arraybuffer';
+			xhr.onload = function (e) {
+				if (xhr.status == 200) {
+					var data = new Uint8Array(xhr.response)
+					var workbook = XLSX.read(data, { type: 'array' });
+					if (callback) callback(workbook);
+				}
+			};
+			xhr.send();
+		}
+
+		// 读取 excel文件
+		function outputWorkbook(workbook) {
+			var sheetNames = workbook.SheetNames; // 工作表名称集合
+			sheetNames.forEach(name => {
+				var worksheet = workbook.Sheets[name]; // 只能通过工作表名称来获取指定工作表
+				for (var key in worksheet) {
+					// v是读取单元格的原始值
+					console.log(key, key[0] === '!' ? worksheet[key] : worksheet[key].v);
+				}
+			});
+		}
+		
+		function handleDataFileSelect(evt) {
+			var files = evt.target.files; // FileList object
+			for (var i = 0, f; f = files[i]; i++) {
+				var reader = new FileReader();
+				reader.onload = (function (theFile) {
+					return function (e) {
+						dataInput = e.target.result.split(' ')
+						dataInput = [...new Set(dataInput)]
+						// var span = document.createElement('span');
+						// span.innerHTML = e.target.result;
+						// document.getElementById('list').insertBefore(span, null);
+					};
+				})(f);
+				reader.readAsText(f);
+			}
+		}
+
+		function readWorkbook(workbook) {
+			var sheetNames = workbook.SheetNames; // 工作表名称集合
+			var worksheet = workbook.Sheets[sheetNames[0]]; // 这里我们只读取第一张sheet
+			var csv = XLSX.utils.sheet_to_csv(worksheet);
+
+			// excelFile = document.getElementById('dataFilePicker').files[0]
+			// var reader = new FileReader()
+			// reader.onload = function() {
+			// 		if(reader.result) {
+			// 				//显示文件内容
+			// 				console.log(reader.result);
+			// 		}
+			// };
+			// reader.readAsText(excelFile);
+
+			// dataInput  = document.getElementById('data').value.split(' ')
+
+			let [searchHtml, resultInnerHTML] = csv2table(dataInput, csv)
+
+
+			document.getElementById('result').innerHTML = resultInnerHTML
+			document.getElementById('search-result').innerHTML = searchHtml
+		}
+		// 将csv转换成表格
+		function csv2table(dataInput, csv) {
+			var html = '<table>';
+			var searchHtml = '';
+			var rows = csv.split('\n');
+			statistic = []
+			for (var i = 0; i < rows.length; i++) {
+				statistic.push(0)
+			}
+			rows.pop(); // 最后一行没用的
+			rows.forEach(function (row, idx) {
+				var columns = row.split(',');
+				for (var i = 0; i < columns.length; i++) {
+					for (var j = 0; j < dataInput.length; j++) {
+						if (columns[i] == dataInput[j]) {
+							searchHtml += dataInput[j] + ' module:' + (idx + 1) + '<br/>'
+							statistic[idx]++;
+						}
+					}
+				}
+				columns.unshift(idx + 1); // 添加行索引
+				if (idx == 0) { // 添加列索引
+					html += '<tr>';
+					for (var i = 0; i < columns.length; i++) {
+						html += '<th>' + (i == 0 ? '' : String.fromCharCode(65 + i - 1)) + '</th>';
+					}
+					html += '</tr>';
+				}
+				html += '<tr>';
+				columns.forEach(function (column) {
+					html += '<td>' + column + '</td>';
+				});
+				html += '</tr>';
+			});
+			html += '</table>';
+			var max = Math.max.apply(null, statistic);
+			searchHtml += 'the module is:' + (statistic.indexOf(max) + 1) + '<br/>'
+			console.log([searchHtml, html])
+			return [searchHtml, html];
+		}
+
+		function table2csv(table) {
+			var csv = [];
+			$(table).find('tr').each(function () {
+				var temp = [];
+				$(this).find('td').each(function () {
+					temp.push($(this).html());
+				})
+				temp.shift(); // 移除第一个
+				csv.push(temp.join(','));
+			});
+			csv.shift();
+			return csv.join('\n');
+		}
+
+		// csv转sheet对象
+		function csv2sheet(csv) {
+			var sheet = {}; // 将要生成的sheet
+			csv = csv.split('\n');
+			csv.forEach(function (row, i) {
+				row = row.split(',');
+				if (i == 0) sheet['!ref'] = 'A1:' + String.fromCharCode(65 + row.length - 1) + (csv.length - 1);
+				row.forEach(function (col, j) {
+					sheet[String.fromCharCode(65 + j) + (i + 1)] = { v: col };
+				});
+			});
+			return sheet;
+		}
+
+		// 将一个sheet转成最终的excel文件的blob对象，然后利用URL.createObjectURL下载
+		function sheet2blob(sheet, sheetName) {
+			sheetName = sheetName || 'sheet1';
+			var workbook = {
+				SheetNames: [sheetName],
+				Sheets: {}
+			};
+			workbook.Sheets[sheetName] = sheet;
+			// 生成excel的配置项
+			var wopts = {
+				bookType: 'xlsx', // 要生成的文件类型
+				bookSST: false, // 是否生成Shared String Table，官方解释是，如果开启生成速度会下降，但在低版本IOS设备上有更好的兼容性
+				type: 'binary'
+			};
+			var wbout = XLSX.write(workbook, wopts);
+			var blob = new Blob([s2ab(wbout)], { type: "application/octet-stream" });
+			// 字符串转ArrayBuffer
+			function s2ab(s) {
+				var buf = new ArrayBuffer(s.length);
+				var view = new Uint8Array(buf);
+				for (var i = 0; i != s.length; ++i) view[i] = s.charCodeAt(i) & 0xFF;
+				return buf;
+			}
+			return blob;
+		}
+
+		/**
+		 * 通用的打开下载对话框方法，没有测试过具体兼容性
+		 * @param url 下载地址，也可以是一个blob对象，必选
+		 * @param saveName 保存文件名，可选
+		 */
+		function openDownloadDialog(url, saveName) {
+			if (typeof url == 'object' && url instanceof Blob) {
+				url = URL.createObjectURL(url); // 创建blob地址
+			}
+			var aLink = document.createElement('a');
+			aLink.href = url;
+			aLink.download = saveName || ''; // HTML5新增的属性，指定保存文件名，可以不要后缀，注意，file:///模式下不会生效
+			var event;
+			if (window.MouseEvent) event = new MouseEvent('click');
+			else {
+				event = document.createEvent('MouseEvents');
+				event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+			}
+			aLink.dispatchEvent(event);
+		}
+		changeEventAction = function (e) {
+			var files = e.target.files;
+			if (files.length == 0) return;
+			var f = files[0];
+			if (!/\.xlsx$/g.test(f.name)) {
+				alert('Only read xlsx format is supported!');
+				return;
+			}
+			readWorkbookFromLocalFile(f, function (workbook) {
 				readWorkbook(workbook);
 			});
 		}
-	}
-	function selectFile() {
-		document.getElementById('file').click();
-	}
-
-	// 读取本地excel文件
-	function readWorkbookFromLocalFile(file, callback) {
-		var reader = new FileReader();
-		reader.onload = function(e) {
-			var data = e.target.result;
-			var workbook = XLSX.read(data, {type: 'binary'});
-			if(callback) callback(workbook);
-		};
-		reader.readAsBinaryString(file);
-	}
-
-	// 从网络上读取某个excel文件，url必须同域，否则报错
-	function readWorkbookFromRemoteFile(url, callback) {
-		var xhr = new XMLHttpRequest();
-		xhr.open('get', url, true);
-		xhr.responseType = 'arraybuffer';
-		xhr.onload = function(e) {
-			if(xhr.status == 200) {
-				var data = new Uint8Array(xhr.response)
-				var workbook = XLSX.read(data, {type: 'array'});
-				if(callback) callback(workbook);
-			}
-		};
-		xhr.send();
-	}
-
-	// 读取 excel文件
-	function outputWorkbook(workbook) {
-		var sheetNames = workbook.SheetNames; // 工作表名称集合
-		sheetNames.forEach(name => {
-			var worksheet = workbook.Sheets[name]; // 只能通过工作表名称来获取指定工作表
-			for(var key in worksheet) {
-				// v是读取单元格的原始值
-				console.log(key, key[0] === '!' ? worksheet[key] : worksheet[key].v);
-			}
+		$(function () {
+			document.getElementById('filePicker').addEventListener('change', changeEventAction);
+			document.getElementById('dataFilePicker').addEventListener('change', handleDataFileSelect, false);
+			loadRemoteFile('./sample/FGSG gene database(1).xlsx');
 		});
-	}
-	var dataInput = ''
-	function handleDataFileSelect(evt) {
-        var files = evt.target.files; // FileList object
-        for (var i = 0, f; f = files[i]; i++) {
-            var reader = new FileReader();
-            reader.onload = (function (theFile) {
-                return function (e) {
-										dataInput = e.target.result.split(' ')
-										dataInput = [...new Set(dataInput)]
-                    // var span = document.createElement('span');
-                    // span.innerHTML = e.target.result;
-                    // document.getElementById('list').insertBefore(span, null);
-                };
-            })(f);
-            reader.readAsText(f);
-        }
-    }
 
-	function readWorkbook(workbook) {
-		var sheetNames = workbook.SheetNames; // 工作表名称集合
-		var worksheet = workbook.Sheets[sheetNames[0]]; // 这里我们只读取第一张sheet
-		var csv = XLSX.utils.sheet_to_csv(worksheet);
-
-		// excelFile = document.getElementById('dataFilePicker').files[0]
-		// var reader = new FileReader()
-		// reader.onload = function() {
-		// 		if(reader.result) {
-		// 				//显示文件内容
-		// 				console.log(reader.result);
-		// 		}
-		// };
-		// reader.readAsText(excelFile);
-
-		// dataInput  = document.getElementById('data').value.split(' ')
-		
-		let [searchHtml, resultInnerHTML] =  csv2table(dataInput, csv)
-        
-
-		document.getElementById('result').innerHTML = resultInnerHTML
-    document.getElementById('search-result').innerHTML = searchHtml
-	}
-	// 将csv转换成表格
-	function csv2table(dataInput, csv)
-	{
-		var html = '<table>';
-        var searchHtml = '';
-		var rows = csv.split('\n');
-        statistic = []
-        for(var i = 0; i < rows.length; i++){
-            statistic.push(0)
-        }
-		rows.pop(); // 最后一行没用的
-		rows.forEach(function(row, idx) {
-			var columns = row.split(',');
-            for(var i = 0; i < columns.length; i++){
-                for(var j=0 ;j < dataInput.length; j++){
-                    if(columns[i]== dataInput[j]){
-                        searchHtml += dataInput[j] + ' module:' + (idx + 1) + '<br/>'
-                        statistic[idx]++;
-                    }
-                }
-            }
-			columns.unshift(idx+1); // 添加行索引
-			if(idx == 0) { // 添加列索引
-				html += '<tr>';
-				for(var i=0; i<columns.length; i++) {
-					html += '<th>' + (i==0?'':String.fromCharCode(65+i-1)) + '</th>';
-				}
-				html += '</tr>';
-			}
-			html += '<tr>';
-			columns.forEach(function(column) {
-				html += '<td>'+column+'</td>';
+		function loadRemoteFile(url) {
+			readWorkbookFromRemoteFile(url, function (workbook) {
+				readWorkbook(workbook);
 			});
-			html += '</tr>';
-		});
-		html += '</table>';
-			var max = Math.max.apply(null,statistic);
-			searchHtml += 'the module is:'+ (statistic.indexOf(max) +1)+ '<br/>'
-			console.log([searchHtml, html])
-		return [searchHtml, html];
-	}
-
-	function table2csv(table) {
-		var csv = [];
-		$(table).find('tr').each(function() {
-			var temp = [];	
-			$(this).find('td').each(function() {
-				temp.push($(this).html());
-			})
-			temp.shift(); // 移除第一个
-			csv.push(temp.join(','));
-		});
-		csv.shift();
-		return csv.join('\n');
-	}
-
-	// csv转sheet对象
-	function csv2sheet(csv) {
-		var sheet = {}; // 将要生成的sheet
-		csv = csv.split('\n');
-		csv.forEach(function(row, i) {
-			row = row.split(',');
-			if(i == 0) sheet['!ref'] = 'A1:'+String.fromCharCode(65+row.length-1)+(csv.length-1);
-			row.forEach(function(col, j) {
-				sheet[String.fromCharCode(65+j)+(i+1)] = {v: col};
-			});
-		});
-		return sheet;
-	}
-
-	// 将一个sheet转成最终的excel文件的blob对象，然后利用URL.createObjectURL下载
-	function sheet2blob(sheet, sheetName) {
-		sheetName = sheetName || 'sheet1';
-		var workbook = {
-			SheetNames: [sheetName],
-			Sheets: {}
-		};
-		workbook.Sheets[sheetName] = sheet;
-		// 生成excel的配置项
-		var wopts = {
-			bookType: 'xlsx', // 要生成的文件类型
-			bookSST: false, // 是否生成Shared String Table，官方解释是，如果开启生成速度会下降，但在低版本IOS设备上有更好的兼容性
-			type: 'binary'
-		};
-		var wbout = XLSX.write(workbook, wopts);
-		var blob = new Blob([s2ab(wbout)], {type:"application/octet-stream"});
-		// 字符串转ArrayBuffer
-		function s2ab(s) {
-			var buf = new ArrayBuffer(s.length);
-			var view = new Uint8Array(buf);
-			for (var i=0; i!=s.length; ++i) view[i] = s.charCodeAt(i) & 0xFF;
-			return buf;
 		}
-		return blob;
-	}
 
-	/**
-	 * 通用的打开下载对话框方法，没有测试过具体兼容性
-	 * @param url 下载地址，也可以是一个blob对象，必选
-	 * @param saveName 保存文件名，可选
-	 */
-	function openDownloadDialog(url, saveName)
-	{
-		if(typeof url == 'object' && url instanceof Blob)
-		{
-			url = URL.createObjectURL(url); // 创建blob地址
+		function exportExcel() {
+			var csv = table2csv($('#result table')[0]);
+			var sheet = csv2sheet(csv);
+			var blob = sheet2blob(sheet);
+			openDownloadDialog(blob, '导出.xlsx');
 		}
-		var aLink = document.createElement('a');
-		aLink.href = url;
-		aLink.download = saveName || ''; // HTML5新增的属性，指定保存文件名，可以不要后缀，注意，file:///模式下不会生效
-		var event;
-		if(window.MouseEvent) event = new MouseEvent('click');
-		else
-		{
-			event = document.createEvent('MouseEvents');
-			event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-		}
-		aLink.dispatchEvent(event);
-	}
-	changeEventAction = function(e) {
-		var files = e.target.files;
-		if(files.length == 0) return;
-		var f = files[0];
-		if(!/\.xlsx$/g.test(f.name)) {
-			alert('Only read xlsx format is supported!');
-			return;
-		}
-		readWorkbookFromLocalFile(f, function(workbook) {
-			readWorkbook(workbook);
-		});
-	}
-	$(function() {
-		document.getElementById('filePicker').addEventListener('change', changeEventAction);
-		document.getElementById('dataFilePicker').addEventListener('change', handleDataFileSelect, false);
-		loadRemoteFile('./sample/FGSG gene database(1).xlsx');
-	});
-	
-	function loadRemoteFile(url) {
-		readWorkbookFromRemoteFile(url, function(workbook) {
-			readWorkbook(workbook);
-		});
-	}
 
-	function exportExcel() {
-		var csv = table2csv($('#result table')[0]);
-		var sheet = csv2sheet(csv);
-		var blob = sheet2blob(sheet);
-		openDownloadDialog(blob, '导出.xlsx');
-	}
-
-	function exportSpecialExcel() {
-		var aoa = [
-			['主要信息', null, null, '其它信息'], // 特别注意合并的地方后面预留2个null
-			['姓名', '性别', '年龄', '注册时间'],
-			['张三', '男', 18, new Date()],
-			['李四', '女', 22, new Date()]
-		];
-		var sheet = XLSX.utils.aoa_to_sheet(aoa);
-		sheet['!merges'] = [
-			// 设置A1-C1的单元格合并
-			{s: {r: 0, c: 0}, e: {r: 0, c: 2}}
-		];
-		openDownloadDialog(sheet2blob(sheet), '单元格合并示例.xlsx');
-	}
+		function exportSpecialExcel() {
+			var aoa = [
+				['主要信息', null, null, '其它信息'], // 特别注意合并的地方后面预留2个null
+				['姓名', '性别', '年龄', '注册时间'],
+				['张三', '男', 18, new Date()],
+				['李四', '女', 22, new Date()]
+			];
+			var sheet = XLSX.utils.aoa_to_sheet(aoa);
+			sheet['!merges'] = [
+				// 设置A1-C1的单元格合并
+				{ s: { r: 0, c: 0 }, e: { r: 0, c: 2 } }
+			];
+			openDownloadDialog(sheet2blob(sheet), '单元格合并示例.xlsx');
+		}
 	</script>
-    <div id="Layer5"></div>
+	<div id="Layer5"></div>
 </body>
 
 </html>
