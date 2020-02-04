@@ -156,17 +156,18 @@
 
 
 		<div>
-			<br>
-			<strong>Step2</strong>: input database: <span style="margin-left: 94px;">[Step2.1 download database Step2</span>.2 upload database]<br>
-		<input type="file" name="file" id="filePicker" />
-		<!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> -->
-		<a href="sample/FGSG gene database.xlsx">FGSG database </a>(When you want to study the FGSG module, you can download
-		this database directly.)
-		<br>
-		<br>
-		<div>
+		  <p><strong>Step2</strong>: download database </p>
+		  <p><a href="sample/FGSG gene database.xlsx">FGSG database </a>(When you want to study the FGSG module, you can download
+		this database directly.) </p>
+		  <p><strong>Step3</strong>: input database:<br>
+		      <input type="file" name="file" id="filePicker" />
+		      <!-- <input name="button2" type="button"  onclick="show()" value = "Display file"/> --><br>
+		      <br>
+		        </p>
 			<div>
-				Step3: <input style="display: inline-block; width:150px; font-size: 40px;" type="button" value="run" onClick="finishInput()" />
+			<div>
+				<strong>Step4</strong>: 
+				  <input style="display: inline-block; width:150px; font-size: 40px;" type="button" value="run" onClick="finishInput()" />
 				After you get the result, if you want to study the main regulators of the module, you can directly follow what we
 				provide <a href="module-regulators.xlsx">module-regulators</a> .
 			</div>
@@ -174,13 +175,13 @@
 			</div>
 
 		</div>
-	</div>
+</div>
 	<p></p>
 	<!-- 点击运行Python按钮，将本地执行findmodule.py程序 -->
 	<!-- <div id="program">
         <input type="button" value="运行程序" onClick="exec1('python E:/Dreamweaver/workspace/findmodule.py')">
 		</div> -->
-	<div > <span class="sub-header result-now-header">Result show </span> </div>
+	<div > <span class="sub-header result-now-header">Result  </span> </div>
 	<!-- 点击结果, 将在框内显示出计算的结果-->
 	<div id="search-result">
             
